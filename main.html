@@ -10,8 +10,8 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-	<form>
-		<label for="fname">name</label><br>
+	<form action="/action_page.php" method="post">
+		<label for="name">name</label><br>
 		<input field="Name" type="text" required="yes" placeholder="Name" id="name"><br>
 		<label for="email">email</label><br>
 		<input field="Email" type="email" required="yes" placeholder="Email" id="email"><br>
@@ -28,21 +28,16 @@
 		<label for="password">password</label><br>
 		<input field="Password" type="password" required="yes" placeholder="Password" id="password"><br>
 		<label for="tos">tos</label><br>
-		<input field="I Agree to the TOS" type="checkbox" required="yes" id="tos">
-		<input field="Select" type="select" required="yes" placeholder="--Please choose an option--" id="cars"><br>
+		<input field="I Agree to the TOS" type="checkbox" required="yes" id="tos"><br>
 		<label for="cars">cars:</label>
-		       
-		     <select placeholder="--Please choose an option--">
+		       <select placeholder="--Please choose an option--" id="cars">
+				  <option value="">--Please choose an option--</option>
 				  <option value="volvo">Volvo</option>
                   <option value="saab">Saab</option>
 				  <option value="fiat">Fiat</option>
 				  <option value="audi">Audi</option>
-			  </select>
-  
-   
-		<input field="submit" type="submit">
-			
-
+			  </select><br>
+		<button type="submit">submit</button>
 	</form>
 
 </body>
